@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANNO 1800 – Backlog Progress</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+<script>
+  fetch('/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+</script>
+
+  <main>
+    <section>
+      <h2>Review</h2>
+      <p><strong>Status:</strong> 18.05.2025</p>
+      <p><strong>Progress:</strong> ~0%</p>
+      <p><strong>Thoughts so far:</strong> Download is huge, 94.69 GB on my disk.</p>
+
+      <h3>Screenshots</h3>
+      <img src="18.05.2025/image.png" alt="Screenshot 1" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gheorghe Sebastian-Ioan</p>
+  </footer>
+</body>
+</html>
