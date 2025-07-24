@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use | SebastianBytes</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+<script>
+  fetch('/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+</script>
+
+    <main>
+        <section>
+            <h2>Website Usage</h2>
+            <p>
+                By accessing and using this website, you agree to the following terms:
+            </p>
+            <ul>
+                <li>This website is for personal and informational purposes only.</li>
+                <li>You may not use the content for commercial purposes without permission.</li>
+                <li>The website owner is not responsible for the accuracy or completeness of the information provided.</li>
+                <li>Links to external sites are provided for convenience and do not imply endorsement.</li>
+                <li>The website owner may update these terms at any time without notice.</li>
+            </ul>
+            <h3>Contact</h3>
+            <p>
+                For questions regarding these terms, please contact:<br>
+                Gheorghe Sebastian-Ioan<br>
+                Email: <a href="mailto:sebastianghe007@gmail.com">sebastianghe007@gmail.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gheorghe Sebastian-Ioan</p>
+    </footer>
+</body>
