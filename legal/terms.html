@@ -10,25 +10,58 @@
 
 <body>
     <div id="header-placeholder"></div>
-<script>
-  fetch('/header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('header-placeholder').innerHTML = data);
-</script>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+    </script>
 
-    <main>
+    <main id="box-main">
         <section>
-            <h2>Website Usage</h2>
+            <h2>Terms of Use</h2>
             <p>
-                By accessing and using this website, you agree to the following terms:
+                By accessing and using this website, you agree to the following terms and conditions:
             </p>
+
+            <h3>1. Purpose of the Website</h3>
             <ul>
-                <li>This website is for personal and informational purposes only.</li>
-                <li>You may not use the content for commercial purposes without permission.</li>
-                <li>The website owner is not responsible for the accuracy or completeness of the information provided.</li>
-                <li>Links to external sites are provided for convenience and do not imply endorsement.</li>
-                <li>The website owner may update these terms at any time without notice.</li>
+                <li>This website is provided for personal and informational purposes only.</li>
             </ul>
+
+            <h3>2. Use of Content</h3>
+        <ul>
+            <li>You may not use the content for commercial purposes without prior written permission from the website owner.</li>
+            <li><strong>No AI Training:</strong> The website owner does not condone or permit the use of any material from this website for training artificial intelligence (AI) models or systems.</li>
+        </ul>
+
+            <h3>3. Accuracy of Information</h3>
+            <ul>
+                <li>The website owner strives to provide accurate and up-to-date information but does not guarantee the
+                    completeness, reliability, or accuracy of any content.</li>
+            </ul>
+
+            <h3>4. External Links</h3>
+            <ul>
+                <li>
+                    This website may contain links to external sites for your convenience.<br>
+                    The website owner is not responsible for the content, privacy practices, or data collection of
+                    external websites.<br>
+                    Please review their respective terms and privacy policies.
+                </li>
+            </ul>
+
+            <h3>5. Changes to the Website and Terms</h3>
+            <ul>
+                <li>The website owner reserves the right to update, modify, or remove content and these terms at any
+                    time without prior notice.</li>
+            </ul>
+
+            <h3>6. Unauthorized Use</h3>
+            <ul>
+                <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.
+                </li>
+            </ul>
+
             <h3>Contact</h3>
             <p>
                 For questions regarding these terms, please contact:<br>
@@ -38,7 +71,10 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Gheorghe Sebastian-Ioan</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
 </body>

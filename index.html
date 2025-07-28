@@ -16,36 +16,47 @@
     .then(data => document.getElementById('header-placeholder').innerHTML = data);
 </script>
 
-    <main>
+    <main id="box-main">
         <section>
             <h2>Hi, I'm Gheorghe Sebastian</h2>
-            <p>
-                This is my personal website where I share my projects and blog posts. <br>
-                <br>
-                As of 18.07.2025, I am working on a new project called "Backlog Progress".<br>
-                The goal is to create a tool that helps track and visualize progress on tasks and projects.<br>
-                The project is in its early stages, and I will be posting updates on the blog.<br>
-                <br>
-                Talking about backlogs, I have a few games in the pipeline that I want to play through:
-            <ul>
-                <li>Mortal Kombat 1 Chapter 2</li>
-                <li>GTA IV</li>
-                <li>Metro Exodus</li>
-                <li>Hi-Fi Rush</li>
-                <li>Horizon Zero Dawn</li>
-                <li>Bloons Adventure Time TD</li>
-                <li>The Crew Motorfest</li>
-            </ul>
-            I will also be sharing my progress on these games on the blog.<br>
-            Goal is to finish them by the end of august.
-
-            </p>
+        <p>
+            This is my personal website where I share my projects and blog posts. <br>
+            <br>
+            As of 18.07.2025, I am working on a new project called "Backlog Progress".<br>
+            The goal is to create a tool that helps track and visualize progress on tasks and projects.<br>
+            The project is in its early stages, and I will be posting updates on the blog.<br>
+            <br>
+            Talking about backlogs, I have a few games in the pipeline that I want to play through:
+        <ul>
+            <li>Mortal Kombat 1 Chapter 2</li>
+            <li>GTA IV</li>
+            <li>Metro Exodus</li>
+            <li>Hi-Fi Rush</li>
+            <li>Horizon Zero Dawn</li>
+            <li>Bloons Adventure Time TD</li>
+            <li>The Crew Motorfest</li>
+        </ul>
+        I will also be sharing my progress on these games on the blog.<br>
+        Goal is to finish them by the end of august.
+        </p>
+        <h3>About Me</h3>
+        <p>
+            I'm a passionate developer and technology enthusiast based in Germany. I enjoy building web applications, exploring new frameworks, and automating everyday tasks.<br>
+            My main interests include web development, game design, and productivity tools. I love learning new programming languages and experimenting with different tech stacks.<br>
+            <br>
+            When I'm not coding, you can find me playing video games, reading about tech trends, or planning my next project. I believe in continuous learning and sharing knowledge with others.<br>
+            <br>
+            Feel free to reach out if you want to collaborate or just chat about tech, games, or productivity!
+        </p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Gheorghe Sebastian-Ioan</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
 </body>
 
 </html>

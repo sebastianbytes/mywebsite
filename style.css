@@ -12,9 +12,9 @@ header {
   padding: 1em;
   text-align: center;
   font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-  box-shadow: #57564F;
-  
-
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 
@@ -42,6 +42,22 @@ footer {
   padding: 1em;
   background: #DDDAD0;
   margin-top: 2em;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#box-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0px 8px rgba(0,0,0,0.2);
+}
+
+#afooter {
+  color: #57564F;
+  text-decoration: none;
+  margin: 0 1em;
 }
 .game-grid {
   display: grid;
