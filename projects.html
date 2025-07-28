@@ -14,7 +14,7 @@
     .then(data => document.getElementById('header-placeholder').innerHTML = data);
 </script>
 
-  <main>
+  <main id="box-main">
     <section>
       <h2>My Projects</h2>
       <p>Here you can find my featured project. Each project has details and progress notes.</p>
@@ -27,8 +27,11 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Gheorghe Sebastian-Ioan</p>
-  </footer>
+      <div id="footer-placeholder"></div>
+    <script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
 </body>
 </html>

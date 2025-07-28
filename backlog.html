@@ -14,7 +14,7 @@
     .then(data => document.getElementById('header-placeholder').innerHTML = data);
 </script>
 
-  <main>
+  <main id="box-main">
     <section>
       <h2>My Game Backlog</h2>
       <p>These are the games I’m planning to finish by the end of August 2025. Each one has its own page with screenshots and progress notes.</p>
@@ -56,8 +56,11 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Gheorghe Sebastian-Ioan</p>
-  </footer>
+      <div id="footer-placeholder"></div>
+    <script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
 </body>
 </html>
