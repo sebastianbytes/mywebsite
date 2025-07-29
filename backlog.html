@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Backlog Progress</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="header-placeholder"></div>
-<script>
-  fetch('/header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('header-placeholder').innerHTML = data);
-</script>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+  </script>
 
-  <main id="box-main">
-    <section>
-      <h2>My Game Backlog</h2>
-      <p>These are the games I’m planning to finish by the end of August 2025. Each one has its own page with screenshots and progress notes.</p>
-      
-      <div class="game-grid">
-        <a href="games/mk12/index.html" class="game-card">
-          <img src="games/mk12/cover.jpg" alt="ANNO 1800">
-          <h3>Mortal Kombat 1 Chapter 2</h3>
-        </a>
-        <a href="games/gtaiv/index.html" class="game-card">
-          <img src="games/gtaiv/cover.jpg" alt="GTA IV">
-          <h3>GTA IV</h3>
-        </a>
-        <a href="games/metroexodus/index.html" class="game-card">
-          <img src="games/metroexodus/cover.jpg" alt="Metro Exodus">
-          <h3>Metro Exodus</h3>
-        </a>
-        <a href="games/hifirush/index.html" class="game-card">
-          <img src="games/hifirush/cover.jpg" alt="Hi-Fi Rush">
-          <h3>Hi-Fi Rush</h3>
-        </a>
-        <a href="games/horizon/index.html" class="game-card">
-          <img src="games/horizon/cover.jpg" alt="Horizon Zero Dawn">
-          <h3>Horizon Zero Dawn</h3>
-        </a>
-        <a href="games/bloons/index.html" class="game-card">
-          <img src="games/bloons/cover.jpg" alt="Bloons Adventure Time TD">
-          <h3>Bloons Adventure Time TD</h3>
-        </a>
-        <a href="games/crewmotorfest/index.html" class="game-card">
-          <img src="games/crewmotorfest/cover.jpg" alt="The Crew Motorfest">
-          <h3>The Crew Motorfest</h3>
-        </a>
-        <a href="games/gasstation/index.html" class="game-card">
-          <img src="games/gasstation/cover.jpg" alt="Gas Station Simulator">
-          <h3>Gas Station Simulator</h3>
-        </a>
-      </div>
-    </section>
-  </main>
+    <main id="box-main">
+      <section>
+        <h2>My Game Backlog</h2>
+        <p>These are the games I’m planning to finish by the end of August 2025. Each one has its own page with
+          screenshots and progress notes.</p>
 
-      <div id="footer-placeholder"></div>
+        <div class="game-grid">
+          <a href="games/mk12/index.html" class="game-card">
+            <img src="games/mk12/cover.jpg" alt="ANNO 1800">
+            <h3>Mortal Kombat 1 Chapter 2</h3>
+          </a>
+          <a href="games/gtaiv/index.html" class="game-card">
+            <img src="games/gtaiv/cover.jpg" alt="GTA IV">
+            <h3>GTA IV</h3>
+          </a>
+          <a href="games/metroexodus/index.html" class="game-card">
+            <img src="games/metroexodus/cover.jpg" alt="Metro Exodus">
+            <h3>Metro Exodus</h3>
+          </a>
+          <a href="games/hifirush/index.html" class="game-card">
+            <img src="games/hifirush/cover.jpg" alt="Hi-Fi Rush">
+            <h3>Hi-Fi Rush</h3>
+          </a>
+          <a href="games/horizon/index.html" class="game-card">
+            <img src="games/horizon/cover.jpg" alt="Horizon Zero Dawn">
+            <h3>Horizon Zero Dawn</h3>
+          </a>
+          <a href="games/bloons/index.html" class="game-card">
+            <img src="games/bloons/cover.jpg" alt="Bloons Adventure Time TD">
+            <h3>Bloons Adventure Time TD</h3>
+          </a>
+          <a href="games/crewmotorfest/index.html" class="game-card">
+            <img src="games/crewmotorfest/cover.jpg" alt="The Crew Motorfest">
+            <h3>The Crew Motorfest</h3>
+          </a>
+          <a href="games/gasstation/index.html" class="game-card">
+            <img src="games/gasstation/cover.jpg" alt="Gas Station Simulator">
+            <h3>Gas Station Simulator</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
     <script>
-  fetch('/footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-</script>
+      fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
 </body>
 </html>
