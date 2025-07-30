@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backlog Progress</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+  </script>
+  <div class="page-wrapper">
+    <main id="box-main">
+      <section>
+        <h2>Dev Logs</h2>
+        <p><strong>Progress:</strong> ~0%</p>
+
+      </section>
+
+      <section>
+        <br>
+        <p><strong>Status:</strong> 22.07.2025</p>
+        <p><strong>Update:</strong> I made a sketch for the overall homepage.</p>
+
+      </section>
+      <section>
+        <br>
+        <p><strong>Status:</strong> 21.07.2025</p>
+        <p><strong>Update:</strong> I created the WPF Project c:</p>
+
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</div>
+
+</html>

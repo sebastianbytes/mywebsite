@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grand Theft Auto IV – Backlog Progress</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+<script>
+  fetch('/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+</script>
+
+  <main id="box-main">
+    <section>
+      <h2>Review</h2>
+      <p><strong>Status:</strong> 18.07.2025</p>
+     <div class="progress-container">
+          <div class="progress-bar" style="width: 10%">10%</div>
+        </div>
+      <p><strong>Thoughts so far:</strong> Last Played on the 17th of April with only 3.3 Hours Playtime.</p>
+    </section>
+    <h6>Link to the used cover art <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARfbC-DGGM8BejhzrATRgp5VLw4qeVJLTEg&s" target="_blank">here</a></h6>
+  </main>
+
+      <div id="footer-placeholder"></div>
+    <script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+</body>
+</html>
