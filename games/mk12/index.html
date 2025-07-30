@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortal Kombat – Backlog Progress</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mortal Kombat – Backlog Progress</title>
-  <link rel="stylesheet" href="../../style.css" />
-</head>
-
-<body>
-  <div id="header-placeholder"></div>
-  <script>
-    fetch('/header.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('header-placeholder').innerHTML = data);
-  </script>
+  <body>
+    <div id="header-placeholder"></div>
+    <script>
+      fetch("/header.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("header-placeholder").innerHTML = data)
+        );
+    </script>
     <main id="box-main">
       <section>
         <h2>Review</h2>
         <p><strong>Status:</strong> 20.07.2025</p>
-        <p><strong>Progress:</strong> ~0%</p>
-        <p><strong>Thoughts so far:</strong>Got the DLC recently and already finished chapter 1.</p>
-
+        <div class="progress-container">
+          <div class="progress-bar" style="width: 0%">0%</div>
+        </div>
+        <p>
+          <strong>Thoughts so far:</strong>Got the DLC recently and already
+          finished chapter 1.
+        </p>
       </section>
-      <h6>Link to the used cover art <a
+      <h6>
+        Link to the used cover art
+        <a
           href="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/10/untitled-design-2.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5"
-          target="_blank">here</a></h6>
+          target="_blank"
+          >here</a
+        >
+      </h6>
     </main>
 
     <div id="footer-placeholder"></div>
-  <script>
-    fetch('/footer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-  </script>
-</body>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+  </body>
 </html>
